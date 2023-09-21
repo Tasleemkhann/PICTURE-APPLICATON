@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.search {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 70%;
+}
+
+button {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  transform-origin: center center;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.gallery-item .details {
+  padding: 15px;
+}
+
+.gallery-item .details h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.gallery-item .details p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #777;
+}
+
+.gallery-item .details a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.gallery-item .details a:hover {
+  color: #ff6b6b;
+}
